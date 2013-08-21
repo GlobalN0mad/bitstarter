@@ -3,15 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet"
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <!-- MAC: to setup responsive desing -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--   Previous code: -->
+
+<!--    <link type="text/css" rel="stylesheet"
+          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+ -->
+    <!-- MAC: bootstrap.min.css before bootstrap-responsive.min.css -->
+    <link type="text/css" rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css">
+
+
     <style type="text/css">
+
+      /* MAC: */
+      /* Large desktop */
+      @media (min-width: 980px) {
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) {
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+      }
+
+      /* All form factors */
+
       body {
         padding-top: 20px;
         padding-bottom: 40px;
-      }
-      .container {
-        width: 960px;
       }
       p.lead {
         padding-top: 15px;
@@ -33,15 +71,14 @@
         height: 40px;
         line-height: 40px;
       }
-      div.row {
+      div.row-fluid {
         border: 1px solid;
       }
     </style>
-    <link href="bitstarter.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <div class="row navigation">
+      <div class="row-fluid navigation">
         <div class="span2 logo">
           Logo
         </div>
@@ -52,48 +89,58 @@
           About
         </div>
       </div>
-      <div class="row heading">
+      <div class="row-fluid heading">
         <div class="span12">
           <h1>Bitstarter Title</h1>
         </div>
       </div>
-     <div class="row subheading">
+     <div class="row-fluid subheading">
         <div class="span12">
           <p class="lead">This is my first bitstarter project.</p>
         </div>
       </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
+      <div class="row-fluid pitch">
+        <div class="span6">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
         <div class="span6">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+
           <div class="thermometer">
-            Thermometer
           </div>
           <div class="order">
-            Order
           </div>
           <div class="social">
-            Social
           </div>
         </div>
       </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1
+      <div class="row-fluid section1">
+        <div class="span6 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+
+        </div>
+        <div class="span6 copy">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+
         </div>
       </div>
-      <div class="row section2">
-        <div class="span12">
-          Marketing Section 2
+      <div class="row-fluid section2">
+
+        <div class="span6 copy-right">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+
+        </div>
+        <div class="span6 asset">
+            <img class="img-polaroid" src="http://placehold.it/480x300">
+
         </div>
       </div>
-      <div class="row faq">
+      <div class="row-fluid faq">
         <div class="span12">
           FAQ
         </div>
       </div>
-      <div class="row footer">
+      <div class="row-fluid footer">
         <div class="span12">
           Footer
         </div>
